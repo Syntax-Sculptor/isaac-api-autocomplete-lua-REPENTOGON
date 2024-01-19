@@ -123,13 +123,14 @@ end
 function EntityFamiliar:TriggerRoomClear()
 end
 
----@param aimDirection Vector 
+---@param aimDirection Vector
 ---@param direction Direction
 ---@param unknownVector Vector? TODO: Document this parameter
 ---@return boolean `true` if it was able to aim.
 function EntityFamiliar:TryAimAtMarkedTarget(aimDirection, direction, unknownVector)
 end
 
----@return PathFinder
-function EntityFamiliar:GetPathFinder()
+---Returns nil for familiars that don't mimic the player's attacks (Incubus, etc).
+---@return Weapon
+function EntityFamiliar:GetWeapon()
 end
