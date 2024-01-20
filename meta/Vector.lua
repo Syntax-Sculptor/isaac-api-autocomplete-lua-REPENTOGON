@@ -15,14 +15,14 @@ function _G.Vector(x, y) end
 
 ---@param AngleDegrees number
 ---@return Vector
-function Vector.FromAngle(AngleDegrees)
+function _G.Vector.FromAngle(AngleDegrees)
 end
 
 ---@param first Vector
 ---@param second Vector
 ---@param t number
 ---@return Vector
-function Vector.Lerp(first, second, t)
+function _G.Vector.Lerp(first, second, t)
 end
 
 ---@param Right Vector
@@ -117,3 +117,9 @@ end
 function Vector:Rotated(AngleDegrees)
 end
 
+_G.Vector = {
+	---@type Vector
+	One = Vector(1,1),
+	---@type Vector
+	Zero = Vector(0,0)
+}
